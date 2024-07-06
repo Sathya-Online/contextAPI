@@ -5,6 +5,7 @@ import Movie from './components/Movie';
 import { useState } from 'react';
 import Child1 from './components/child1';
 import { Context } from './Context';
+import Posts from './components/Posts';
 
 function App() {
 
@@ -40,13 +41,14 @@ function App() {
 
       <Header />
       <hr></hr>
-      <div className="movie-list row">
+      {/* <div className="movie-list row">
         {movieList.map(
           (movie, index) => <Movie key={index} title={movie.title} description={movie.description}/>
         )}
       </div>
       <hr></hr>
-        <Child1/>
+        <Child1/> */}
+        <Posts/>
       <hr></hr>
       <Footer />
 
